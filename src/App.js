@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header";
-import "./App.css";
 import Orders from './components/Orders';
 import Home from "./components/Home";
 import Payment from "./components/Payment";
@@ -18,7 +17,7 @@ const promise = loadStripe(
 );
 
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [{user}, dispatch] = useStateValue();
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       console.log("THE USER IS >>>", authUser);

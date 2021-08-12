@@ -21,7 +21,12 @@ function Payment() {
   const [clientSecret, setClientSecret] = useState(true)
   const stripe = useStripe();
   const elements = useElements();
-
+  useEffect(() => {
+    if(!user){
+      alert('Please Login to proceed for the payment')
+      history.push('/login')
+    }
+  },[])
   useEffect(() => {
     const getClientSecret = async () => {
       const response = await axios.post(`https://rithika-test.herokuapp.com/payment/create?total=${total * 100}`)
