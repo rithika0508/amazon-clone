@@ -14,4 +14,5 @@ npm i
 yarn start
 ```
  ## deployment
+ 
 https://rithika-amazon-eccomerce-clone.netlify.app/
