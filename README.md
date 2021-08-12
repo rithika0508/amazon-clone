@@ -14,4 +14,4 @@ npm i
 yarn start
 ```
  ## deployment
-https://clone-aac6a.web.app/
+https://rithika-amazon-eccomerce-clone.netlify.app/
