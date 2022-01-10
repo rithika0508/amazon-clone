@@ -29,7 +29,7 @@ function Payment() {
   },[])
   useEffect(() => {
     const getClientSecret = async () => {
-      const response = await axios.post(`https://rithika-test.herokuapp.com/payment/create?total=${total * 100}`)
+      const response = await axios.post(`https://rithika-amazon-clone-api.herokuapp.com/payment/create?total=${total * 100}`)
       setClientSecret(response.data.clientSecret)
     }
     getClientSecret()
